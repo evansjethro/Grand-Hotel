@@ -25,6 +25,7 @@ html {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 10;
 }
 
 .menu-icon {
@@ -50,7 +51,7 @@ html {
 
 .line-1, .line-3 {
 	width: 2rem;
-	transition: width .5s;
+	transition: all .5s;
 }
 
 
@@ -87,6 +88,7 @@ html {
 
 /* navigation*/
 .navigation {
+	left:-40rem;
 	padding: 3rem 0;
 	position: fixed;
 	width: 40rem;
@@ -98,6 +100,7 @@ html {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	transition: left .8s cubic-bezier(1,0,.5,1);
 }
 
 .navigation-heading {
@@ -201,9 +204,31 @@ font-size: 1.6rem;
 }
 
 .copyright{
-	color: #fff;
+	color: #deaa86;
 	font-size: 1.2rem;
 	padding-bottom: 5rem;
+}
+
+.checkbox:checked~ .navigation{
+	left:0;
+}
+
+.checkbox{
+	display: none;
+}
+
+.checkbox:checked ~ .sidebar .line-1{
+	transform: rotate(-405deg) translate(-5px, 6px);
+	width:2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2{
+	opacity:0;
+}
+
+.checkbox:checked ~ .sidebar .line-3{
+	transform: rotate(405deg) translate(-5px,-6px);
+	width: 2.5rem;
 }
 /*end of navigation*/
 /*end of navbar*/
