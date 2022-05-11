@@ -8,6 +8,7 @@ html {
 	margin: 0;
 	padding: 0;
 	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
 }
 
 /* end of common styles */
@@ -312,6 +313,122 @@ html {
 		opacity: 1;
 	}
 }
+
+/*      end of header       */
+
+
+/*      about us        */
+
+.about-us {
+	display: flex;
+	background-color: #ddd;
+}
+
+.about-us-content{
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10rem;
+	box-sizing: border-box;
+}
+
+.about-us-heading{
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 4rem;
+	font-weight:300;
+	text-transform: uppercase;
+	color: #555;
+	padding-bottom: 2rem;
+}
+
+.small-underline{
+	width: 9rem;
+	height: .1rem;
+	background-color: #b85d1c;
+	margin: 0 auto 1rem;
+}
+
+.big-underline{
+	width: 20rem;
+	height: .1rem;
+	background-color: #b85d1c;
+}
+
+.sub-heading{
+	font-size: 3.5rem;
+	font-weight: 300;
+	letter-spacing: .2rem;
+	color:#b85d1c;
+	padding:2rem 0;
+}
+
+.about-us-paragraph{
+	font-size: 1.8rem;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 5rem;
+	word-spacing: .5rem;
+}
+
+.about-us-btn{
+	width:16rem;
+	padding: 1rem 1.5rem;
+	font-family: "Monsarrat",sans-serif;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: .1rem solid #b85d1c;
+	color: #b85d1c;
+	outline: none;
+}
+
+
+.btn-arrow{
+	padding-left: .5rem;
+	transition: padding-left .4s;
+}
+
+
+.about-us-btn:hover .btn-arrow{
+	padding-left: 1.5rem;
+}
+
+
+.about-us-images{
+	flex: 1 1;
+	position: relative;
+}
+
+.image{
+	width: 32rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0 3rem 6rem rgba(0,0,0,.4);
+	border-radius: .4rem;
+	border: .2rem solid #b85d1c;
+	padding: 0;
+}
+
+.image-1{
+	transform: translate(-20%,-90%);
+}
+
+.image-2{
+	transform: translate(-70%,-30%);
+}
+
+.image-3{
+	transform: translate(-30%,-70%);
+}
+
+
+/*      end of about us     */
 
 
 
