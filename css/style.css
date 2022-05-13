@@ -324,7 +324,7 @@ html {
 	background-color: #ddd;
 }
 
-.about-us-content{
+.about-us-content {
 	flex: 0 1 50%;
 	display: flex;
 	flex-direction: column;
@@ -334,37 +334,37 @@ html {
 	box-sizing: border-box;
 }
 
-.about-us-heading{
+.about-us-heading {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 4rem;
-	font-weight:300;
+	font-weight: 300;
 	text-transform: uppercase;
 	color: #555;
 	padding-bottom: 2rem;
 }
 
-.small-underline{
+.small-underline {
 	width: 9rem;
 	height: .1rem;
 	background-color: #b85d1c;
 	margin: 0 auto 1rem;
 }
 
-.big-underline{
+.big-underline {
 	width: 20rem;
 	height: .1rem;
 	background-color: #b85d1c;
 }
 
-.sub-heading{
+.sub-heading {
 	font-size: 3.5rem;
 	font-weight: 300;
 	letter-spacing: .2rem;
-	color:#b85d1c;
-	padding:2rem 0;
+	color: #b85d1c;
+	padding: 2rem 0;
 }
 
-.about-us-paragraph{
+.about-us-paragraph {
 	font-size: 1.8rem;
 	font-style: italic;
 	font-weight: 400;
@@ -373,10 +373,10 @@ html {
 	word-spacing: .5rem;
 }
 
-.about-us-btn{
-	width:16rem;
+.about-us-btn {
+	width: 16rem;
 	padding: 1rem 1.5rem;
-	font-family: "Monsarrat",sans-serif;
+	font-family: "Monsarrat", sans-serif;
 	font-size: 1.5rem;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -387,49 +387,163 @@ html {
 }
 
 
-.btn-arrow{
+.btn-arrow {
 	padding-left: .5rem;
 	transition: padding-left .4s;
 }
 
 
-.about-us-btn:hover .btn-arrow{
+.about-us-btn:hover .btn-arrow {
 	padding-left: 1.5rem;
 }
 
 
-.about-us-images{
+.about-us-images {
 	flex: 1 1;
 	position: relative;
 }
 
-.image{
+.image {
 	width: 32rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	box-shadow: 0 3rem 6rem rgba(0,0,0,.4);
+	transform: translate(-50%, -50%);
+	box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
 	border-radius: .4rem;
 	border: .2rem solid #b85d1c;
 	padding: 0;
 }
 
-.image-1{
-	transform: translate(-20%,-90%);
+.image-1 {
+	transform: translate(-20%, -90%);
 }
 
-.image-2{
-	transform: translate(-70%,-30%);
+.image-2 {
+	transform: translate(-70%, -30%);
 }
 
-.image-3{
-	transform: translate(-30%,-70%);
+.image-3 {
+	transform: translate(-30%, -70%);
 }
 
 
 /*      end of about us     */
 
+
+/*      rooms       */
+
+
+/*      common header*/
+
+.common-header {
+	padding: 5rem;
+	text-align: center;
+	color: #b85d1c;
+}
+
+.common-heading {
+	font-size: 4rem;
+	font-weight: 300;
+	letter-spacing: .2rem;
+	padding-bottom: 3rem;
+
+}
+
+.small-underline {
+	width: 9rem;
+	height: .1rem;
+	background-color: #b85d1c;
+	margin: 0 auto 1rem;
+}
+
+.big-underline {
+	width: 20rem;
+	height: .1rem;
+	margin: 0 auto;
+	background-color: #b85d1c;
+}
+
+/*      end of common header*/
+.rooms {
+
+}
+.rooms-cards-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.room-card {
+	width: 60rem;
+	margin: 5rem;
+	background-color: #15141b;
+	box-shadow: 0 3rem 6rem rgba(0,0,0,.3);
+}
+
+.room-img{
+	width: 100%;
+}
+
+.room-card-content {
+	color: #ddd;
+	padding: 2rem;
+}
+
+.room-card-heading{
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.room-card-paragraph {
+	font-size: 1.5rem;
+	color: #777777;
+	padding: 1rem;
+}
+
+.room-price {
+	font-size: 5rem;
+	font-weight: 300;
+	text-align: right;
+}
+
+.room-card-btn{
+	width: 17rem;
+	padding: 1rem 1.5rem;
+	font-family: "Monsarrat", sans-serif;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: .1rem solid #b85d1c;
+	color: #b85d1c;
+	outline: none;
+	border-radius: 10rem;
+}
+
+.rooms-btn-wrapper{
+	text-align: center;
+}
+
+.rooms-btn {
+	width: 20rem;
+	padding: 1.5rem 1rem;
+	margin: 4rem 0;
+	background-color: transparent;
+	text-transform: uppercase;
+	color: #b85d1c;
+	cursor: pointer;
+	border: .2rem solid #b85d1c;
+	outline: none;
+	box-shadow: 0 1.5rem 6rem rgba(0,0,0,.2);
+	transition: all .2s;
+}
+
+.rooms-btn:hover {
+	color: #dddddd;
+	background-color: #b85d1c;
+}
+/*      end of rooms*/
 
 
 
